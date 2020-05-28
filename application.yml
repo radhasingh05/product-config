@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: product-operations
+  cloud:
+    config:
+      env: default # optional
+      label: master # optional
+      uri: http://localhost:8090 # optional
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
